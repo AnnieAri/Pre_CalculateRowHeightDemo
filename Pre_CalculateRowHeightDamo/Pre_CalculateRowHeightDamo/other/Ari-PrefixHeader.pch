@@ -1,0 +1,41 @@
+//
+//  Ari-PrefixHeader.pch
+//  Pre_CalculateRowHeightDamo
+//
+//  Created by Ari on 2017/3/29.
+//  Copyright © 2017年 xiaohaizi. All rights reserved.
+//
+
+#ifndef Ari_PrefixHeader_pch
+#define Ari_PrefixHeader_pch
+
+
+#if __OBJC__
+
+
+
+#define MAS_SHORTHAND
+#define MAS_SHORTHAND_GLOBALS
+
+#import "Masonry.h"  //布局框架
+#import "YYModel.h"  //解析模型框架
+#import "UIImageView+WebCache.h"//图片异步加载 缓存
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+/**
+ * 调试的宏
+ */
+
+#ifdef DEBUG
+#define NSLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __FUNCTION__, __LINE__, ##__VA_ARGS__)
+#else
+#define NSLog(...)
+#endif
+
+
+
+
+#endif
+
+
+#endif /* Ari_PrefixHeader_pch */
